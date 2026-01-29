@@ -1,0 +1,215 @@
+body {
+  background: #f7f6d7;
+  /*
+  🎨 Paletas de Cores Retrô
+Essas paletas são inspiradas em consoles como NES, SNES, Atari e fliperamas:
+
+1. Neon Arcade
+Fundo: Preto profundo (#000000)
+
+Título: Rosa neon (#FF00FF), Azul elétrico (#00FFFF)
+
+Detalhes: Verde limão (#CCFF00), Laranja vibrante (#FF6600)
+
+2. Pixel Sunset
+Fundo: Roxo escuro (#2D004D)
+
+Título: Laranja queimado (#FF4500), Amarelo dourado (#FFD700)
+
+Detalhes: Rosa suave (#FF69B4), Azul celeste (#87CEEB)
+
+3. Atari Classic
+Fundo: Cinza carvão (#333333)
+
+Título: Vermelho sangue (#B22222), Branco puro (#FFFFFF)
+
+Detalhes: Amarelo mostarda (#FFD700), Azul petróleo (#008080)
+  */
+}
+
+.container-texto {
+  max-width: 900px;
+  width: 100%;
+}
+
+header {
+  padding: 5px 0;
+  background-color: #333333;
+  text-align: center;
+}
+
+header img {
+  max-width: 140px;
+  width: 100%;
+  animation: pulse 1.5s infinite;
+  
+}
+
+@keyframes pulse {
+  0% {
+    /*filter: drop-shadow(0 0 5px #FF00FF, 0 0 10px #FF00FF, 0 0 20px #FF00FF);*/
+    filter: drop-shadow(0 0 5px #FF4500);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 20px #FF4500);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 5px #FF4500);
+  }
+}
+
+.linha {
+  padding: 3px;
+  /*background-color: #FF69B4;*/
+  background: #000000;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 5%, rgba(204, 255, 0, 1) 30%, rgba(0, 255, 255, 1) 50%, rgba(45, 0, 77, 1) 75%, rgba(255, 0, 255, 1) 100%);
+}
+
+/*.game-container {
+  max-width: 330px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 30px 2%;
+}*/
+
+.header-board-game {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.score {
+  background: #bbada0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 90px;
+  text-align: center;
+  border: 1px solid #008080;
+  font-weight: 700;
+}
+
+.board {
+  position: relative;
+  max-width: 330px;
+  width: 100%;
+  max-height: 330px;
+  height: 100%;
+  background: #bbada0;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* fundo do grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.cell {
+  width: 70px;
+  height: 70px;
+  background: #cdc1b4;
+  border-radius: 5px;
+}
+
+/* container dos tiles */
+.tiles {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+/* tiles */
+.tile {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  transition: transform 0.25s ease-in-out;
+}
+
+.tile[data-value="2"] { background: #eee4da; }
+.tile[data-value="4"] { background: #ede0c8; }
+.tile[data-value="8"] { background: #f2b179; color: #fff; }
+.tile[data-value="16"] { background: #f59563; color: #fff; }
+.tile[data-value="32"] { background: #f67c5f; color: #fff; }
+.tile[data-value="64"] { background: #f65e3b; color: #fff; }
+.tile[data-value="128"] { background: #edcf72; color: #fff; }
+.tile[data-value="256"] { background: #edcc61; color: #fff; }
+.tile[data-value="512"] { background: #edc850; color: #fff; }
+.tile[data-value="1024"] { background: #edc53f; color: #fff; }
+.tile[data-value="2048"] { background: #edc22e; color: #fff; }
+
+/* overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(238,228,218,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #776e65;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.centralizar {
+  margin: auto;
+}
+
+.content-2048-game {
+  margin: 60px 2%;
+  text-align: left;
+}
+
+.content-2048-game h1 {
+  margin-top: 130px;
+  font-size: 28px;
+}
+
+.content-2048-game h2 {
+  margin-top: 40px;
+}
+
+/*.content-2048-game p {
+
+}*/
+
+.content-2048-game a {
+  color: #008080;
+}
+
+.content-2048-game ul li {
+  padding-bottom: 15px;
+}
+
+.content-2048-game ol li {
+  margin: 15px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #008080;
+  margin-top: 50px;
+}
+
+footer img {
+  max-width: 200px;
+  width: 100%;
+  overflow-x: hidden;
+}
