@@ -6,10 +6,9 @@ html, body {
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: #776e65; 
-  font-size: 18px;
-  box-sizing: border-box;
-  font-family: "Mulish", sans-serif;}
+  color: #776e65;
+  font-size: 17px;
+  box-sizing: border-box;}
 
 .content-board {
   padding: 60px 1%;
@@ -53,8 +52,7 @@ h1.title {
     opacity: 0; } }
 .scores-container {
   float: right;
-  text-align: right; }
-
+  text-align: right;}
 .score-container, .best-container {
   position: relative;
   display: inline-block;
@@ -544,9 +542,9 @@ hr {
   html, body {
     font-size: 15px; }
 
-  body {
+  /*body {
     margin: 20px 0;
-    padding: 0 20px; }
+    padding: 0 20px; }*/
 
   h1.title {
     font-size: 27px;
