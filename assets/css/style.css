@@ -39,8 +39,6 @@ header {
 }
 
 header img {
-  max-width: 140px;
-  width: 100%;
   animation: pulse 1.5s infinite;
   
 }
@@ -61,7 +59,7 @@ header img {
 }
 
 .linha {
-  padding: 3px;
+  padding: 2px;
   /*background-color: #FF69B4;*/
   background: #000000;
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 5%, rgba(204, 255, 0, 1) 30%, rgba(0, 255, 255, 1) 50%, rgba(45, 0, 77, 1) 75%, rgba(255, 0, 255, 1) 100%);
@@ -98,14 +96,45 @@ header img {
 }
 
 footer {
-  text-align: center;
+  /*margin: 150px 0 0 0;*/
+}
+
+footer .info-footer {
   padding: 20px;
   background-color: #008080;
-  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer a:nth-of-type(1) {
+  color: #f7f6d7;
+  text-decoration: none;
+  font-style: italic;
 }
 
 footer img {
-  max-width: 200px;
-  width: 100%;
-  overflow-x: hidden;
+  /*width: 100%;
+  overflow-x: hidden;*/
+  margin: 10px 0;
+}
+
+.copy {
+  text-align: center;
+  background-color: #333333;
+}
+
+.copy p {
+  font-size: 13px;
+  padding: 10px 2%;
+  color: #FFFFFF;
+}
+
+.copy p a {
+  color: #FF6600;
+  font-style: italic;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 15px;
 }
