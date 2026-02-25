@@ -1,6 +1,4 @@
-body {
-  background: #f7f6d7;
-  /*
+/*
   🎨 Paletas de Cores Retrô
 Essas paletas são inspiradas em consoles como NES, SNES, Atari e fliperamas:
 
@@ -23,24 +21,33 @@ Fundo: Cinza carvão (#333333)
 
 Título: Vermelho sangue (#B22222), Branco puro (#FFFFFF)
 
-Detalhes: Amarelo mostarda (#FFD700), Azul petróleo (#008080)
-  */
+Detalhes: Amarelo mostarda (#FFD700), Azul petróleo (#008080)*/
+
+.clear {
+  clear: both;
 }
 
 .container-texto {
-  max-width: 900px;
+  max-width: 1300px;
   width: 100%;
 }
 
 header {
-  padding: 5px 0;
+  padding: 10px 20px;
   background-color: #333333;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+}
+
+div.logo {
+  display: inline;
 }
 
 header img {
-  max-width: 140px;
-  width: 100%;
+  width: 110px;
+  height: 70px;
   animation: pulse 1.5s infinite;
 }
 
@@ -59,10 +66,43 @@ header img {
   }
 }
 
+.menu {
+  display: inline;
+  float: right;
+  position: relative;
+  top: 8px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu a {
+  font-size: 20px;
+  color: #FF6600;
+  text-decoration: none;
+}
+
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburguer span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #FF6600;
+  transition: all 0.4s ease;
+}
+
 .linha {
   padding: 2px;
-  /*background-color: #FF69B4;*/
-  background: #000000;
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 5%, rgba(204, 255, 0, 1) 30%, rgba(0, 255, 255, 1) 50%, rgba(45, 0, 77, 1) 75%, rgba(255, 0, 255, 1) 100%);
 }
 
@@ -71,7 +111,7 @@ header img {
 }
 
 .content-2048-game {
-  margin: 70px 3%;
+  margin: 70px 4%;
   text-align: left;
 }
 
@@ -82,10 +122,6 @@ header img {
 .content-2048-game h2 {
   margin-top: 40px;
   font-size: 24px;
-}
-
-.content-2048-game h2 {
-  margin-top: 40px;
 }
 
 .content-2048-game a {
@@ -155,7 +191,92 @@ footer img {
   margin-top: 8px;
 }
 
-/*===================Estilos das p=aginas sobre, termos de uso, políticas de privacidade e FAQ===================*/
+/*===================Estilos das páginas sobre, termos de uso, políticas de privacidade e FAQ===================*/
 .conteudo {
-  margin: 80px 3%;
+  margin: 80px 4%;
 }
+
+/*===========================================Media query menu mobile===========================================*/
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+  }
+
+  .logo {
+    position: relative;
+    top: 10px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 119px;
+    right: 0;
+    height: 200vh;
+    max-width: 768px;
+    width: 100%;
+    transform: translateX(100%); 
+    transition: transform 0.4s ease;
+    background-color: #333333;
+    z-index: 1000;
+    overflow-x: hidden;
+  }
+
+  .menu ul {
+    display: inline;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu ul li {
+    border-bottom: 1px solid #FF6600;
+    padding: 20px 0;
+  }
+
+  .menu ul li:hover {
+    background-color: #FFFFFF;
+    transition: 0.6s;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .menu.active { 
+    transform: translateX(0); 
+  }
+
+  .hamburguer {
+    display: flex;
+    float: right;
+    position: relative;
+    top: -37px;
+  }
+}
+
+/* Animação do hambúrguer -> X */
+.hamburguer.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+.hamburguer.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(60px);
+}
+
+.hamburguer.active span:nth-child(3) {
+  transform: rotate(-44deg) translate(5px, -8px);
+}
+
+@media (max-width: 400px) {
+  .logo img {
+    width: 90px;
+    height: 67px;
+  }
+
+  .menu {
+    top: 116px;
+  }
+}
+

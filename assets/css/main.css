@@ -1,8 +1,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  /*font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;*/
+  /*background: #faf8ef;*/
+  background-color: #f7f6d7;
+  overflow-x: hidden;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
