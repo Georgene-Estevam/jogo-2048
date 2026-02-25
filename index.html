@@ -15,16 +15,39 @@
 
 <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 <!--Link css-->
-<link rel="stylesheet" fetchpriority="high" href="./assets/css/style.css">
-<link rel="stylesheet" href="./assets/css/main.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" fetchpriority="high" href="./assets/css/main.css">
 
 <title>2048 Online - Jogue grátis</title>
 </head>
 
 <body>
 
-<header>
-  <img src="./assets/img/img-2048-Photoroom.png" fetchpriority="high" alt="Logo do site 2048 online">
+<header class="header">
+  <div class="container-texto centralizar">
+    <div class="logo">
+      <img src="./assets/img/img-2048-Photoroom_resized_120x80.svg.svg" alt="Logo do site 2048 online" fetchpriority="high">
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./assets/footer_pages/sobre.html">Sobre</a></li>
+        <li><a href="">Contato</a></li>
+        <li><a href="">Como jogar?</a></li>
+      </ul>
+    </nav>
+
+    <div class="clear"></div>
+
+    <div class="hamburguer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <div class="clear"></div>
+  </div>
 </header>
 <div class="linha"></div>
 
@@ -38,8 +61,8 @@
   </div>
 
   <div class="above-game">
-    <p class="game-intro">Junte os números e chegue à <strong>peça 2048!</strong></p>
     <a class="restart-button">New Game</a>
+    <p class="game-intro">Junte os números e chegue ao <strong>bloco 2048!</strong></p>
   </div>
 
   <div class="game-container">
@@ -87,18 +110,18 @@
 <div class="container-texto centralizar">
   <main class="content-2048-game">
     <h1>🎮 Jogo 2048 Online – História, Regras, Estratégias e Benefícios</h1>
-    <p>O jogo 2048 online grátis é um dos quebra-cabeças mais populares e viciantes da última década. Criado em março de 2014 pelo desenvolvedor italiano <a href="https://github.com/gabrielecirulli" target="_blank" rel="noopener noreferrer"><em>Gabriele Cirulli</em></a>, rapidamente se tornou um fenômeno global, conquistando milhões de jogadores com sua simplicidade e profundidade estratégica.</p>
+    <p>O <strong>jogo 2048 online grátis</strong> é um dos quebra-cabeças mais populares e viciantes da última década. Criado em março de 2014 pelo desenvolvedor italiano <a href="https://github.com/gabrielecirulli" target="_blank" rel="noopener noreferrer"><em>Gabriele Cirulli</em></a>, rapidamente se tornou um fenômeno global, conquistando milhões de jogadores com sua simplicidade e profundidade estratégica.</p>
 
     <p>Neste artigo, você vai descobrir:</p>
     <ul>
-      <li id="historia"><b>A história do jogo 2048</b></li>
+      <li><b>A história do jogo 2048</b></li>
       <li><b>As regras básicas para jogar</b></li>
       <li><b>As melhores estratégias para vencer</b></li>
       <li><b>Os benefícios cognitivos de jogar 2048</b></li>
     </ul>
-    <p>👉 E o melhor: você pode jogar 2048 online grátis diretamente aqui em nosso site.</p>
+    <p>👉 E o melhor: você pode jogar o <strong>game 2048 online grátis</strong> diretamente aqui em nosso site.</p>
 
-    <h2 class="#">📜 História do Jogo 2048</h2>
+    <h2>📜 História do Jogo 2048</h2>
     <p>O <strong>2048 game</strong> nasceu como um projeto de fim de semana de <a href="https://github.com/gabrielecirulli" target="_blank" rel="noopener noreferrer"><em>Gabriele Cirulli</em></a>, inspirado em outros jogos de fusão de blocos, como <strong><em><a href="https://apps.apple.com/us/app/1024/id823499224" target="_blank" rel="noopener noreferrer">1024 do Veewo Studio</a></em></strong> e <strong><em><a href="https://en.wikipedia.org/wiki/Threes" target="_blank" rel="noopener noreferrer">Threes</a></em></strong>. A ideia era criar uma versão mais acessível e simples.</p>
 
     <p>Para surpresa do criador, o jogo viralizou poucos dias após o lançamento, tornando-se um sucesso instantâneo e consolidando-se como um dos clássicos dos jogos de lógica e raciocínio.</p>
@@ -110,13 +133,13 @@
 
       <li>Quando dois blocos iguais se encontram, eles se fundem em um novo bloco com a soma dos números.</li>
 
-      <li>Exemplo: dois blocos “2” viram “4”, dois blocos “4” viram “8”, e assim por diante.</li>
+      <li>Exemplo: dois blocos “2” viram “4”, dois blocos “4” viram “8”, dois blocos “8” viram “16” e assim por diante.</li>
 
       <li>O objetivo principal é <b>criar o bloco 2048</b>, mas muitos jogadores continuam jogando para alcançar pontuações ainda maiores.</li>
     </ol>
 
     <h2>🧠 Estratégias para Vencer o Jogo 2048</h2>
-    <p>Embora pareça simples, o 2048 puzzle exige estratégia e planejamento. Confira algumas dicas para aumentar suas chances de vitória:</p>
+    <p>Embora pareça simples, o <strong>2048 puzzle</strong> exige estratégia e planejamento. Confira algumas dicas para aumentar suas chances de vitória:</p>
 
     <ol>
       <li><b>Mantenha o maior bloco em um canto:</b> ajuda a organizar a grade e evita bloqueios. </li>
@@ -180,5 +203,6 @@
 <script src="./assets/javascript/local_storage_manager.js"></script>
 <script src="./assets/javascript/game_manager.js"></script>
 <script src="./assets/javascript/application.js"></script>
+<script src="./assets/javascript/menu_mobile.js"></script>
 </body>
 </html>
