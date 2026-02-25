@@ -198,7 +198,7 @@ footer img {
 
 /*===========================================Media query menu mobile===========================================*/
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     position: relative;
   }
@@ -269,7 +269,7 @@ footer img {
   transform: rotate(-44deg) translate(5px, -8px);
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .logo img {
     width: 90px;
     height: 67px;
