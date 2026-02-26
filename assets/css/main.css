@@ -9,7 +9,8 @@ html, body {
   font-style: normal;
   color: #776e65;
   font-size: 17px;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+  scroll-behavior: smooth;}
 
 .content-board {
   padding: 60px 1%;
@@ -97,7 +98,7 @@ h1.title {
   content: "Score"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "Best";}
 
 p {
   margin-top: 0;

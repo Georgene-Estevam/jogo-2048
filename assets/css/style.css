@@ -80,9 +80,14 @@ header img {
 }
 
 .menu a {
-  font-size: 20px;
+  font-size: 18px;
   color: #FF6600;
   text-decoration: none;
+}
+
+.menu a:hover {
+  color: #FFFFFF;
+  transition: 0.6s;
 }
 
 .hamburguer {
@@ -117,11 +122,12 @@ header img {
 
 .content-2048-game h1 {
   margin-top: 120px;
+  font-size: 25px;
 }
 
 .content-2048-game h2 {
-  margin-top: 40px;
-  font-size: 24px;
+  margin-top: 50px;
+  font-size: 25px;
 }
 
 .content-2048-game a {
@@ -198,6 +204,11 @@ footer img {
 }
 
 /*===========================================Media query menu mobile===========================================*/
+@media screen and (max-width: 1366px) {
+  .container-texto {
+    max-width: 1100px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   header {
@@ -236,6 +247,11 @@ footer img {
 
   .menu ul li:hover {
     background-color: #FFFFFF;
+    transition: 0.6s;
+  }
+
+  .menu a:hover {
+    color: #FF6600;
     transition: 0.6s;
   }
 
