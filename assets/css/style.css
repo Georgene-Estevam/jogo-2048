@@ -227,7 +227,7 @@ footer img {
 
   .menu {
     position: absolute;
-    top: 108px;
+    top: 98px;
     right: 0;
     max-width: 768px;
     width: 100%;
@@ -297,6 +297,6 @@ footer img {
   }
 
   .menu {
-    top: 115px;
+    top: 105px;
   }
 }
