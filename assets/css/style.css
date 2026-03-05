@@ -130,7 +130,7 @@ header img {
   font-size: 25px;
 }
 
-.content-2048-game a {
+.content-2048-game a, a.a-link {
   color: #008080;
 }
 

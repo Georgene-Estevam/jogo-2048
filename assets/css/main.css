@@ -1,3 +1,33 @@
+/* Mulish Regular */
+@font-face {
+  font-family: "Mulish";
+  src: url('../fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype'),
+      url('../fonts/Mulish/static/Mulish-Medium.ttf') format('truetype');
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Mulish itálico */
+@font-face {
+  font-family: "Mulish";
+  src: url('../fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf') format('truetype'),
+      url('../fonts/Mulish/static/Mulish-SemiBoldItalic.ttf') format('truetype');
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Mulish negrito */
+@font-face {
+  font-family: "Mulish";
+  src: url('../fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype'),
+      url('../fonts/Mulish/static/Mulish-Bold.ttf') format('truetype');
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -10,7 +40,8 @@ html, body {
   color: #776e65;
   font-size: 17px;
   box-sizing: border-box;
-  scroll-behavior: smooth;}
+  scroll-behavior: smooth;
+  font-weight: 400;}
 
 .content-board {
   padding: 60px 1%;
@@ -21,8 +52,8 @@ html, body {
   display: block;
   clear: both; }
 
-h1.title {
-  font-size: 60px;
+h2.title {
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -548,7 +579,7 @@ hr {
     margin: 20px 0;
     padding: 0 20px; }*/
 
-  h1.title {
+  h2.title {
     font-size: 27px;
     margin-top: 15px; }
 
