@@ -2,30 +2,33 @@
 @font-face {
   font-family: "Mulish";
   src: url('../fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype'),
-      url('../fonts/Mulish/static/Mulish-Medium.ttf') format('truetype');
+  url('../fonts/Mulish/static/Mulish-Medium.ttf') format('truetype');
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 /* Mulish itálico */
 @font-face {
   font-family: "Mulish";
   src: url('../fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf') format('truetype'),
-      url('../fonts/Mulish/static/Mulish-SemiBoldItalic.ttf') format('truetype');
+  url('../fonts/Mulish/static/Mulish-SemiBoldItalic.ttf') format('truetype');
   font-optical-sizing: auto;
   font-style: italic;
   font-weight: 400;
+  font-display: swap;
 }
 
 /* Mulish negrito */
 @font-face {
   font-family: "Mulish";
   src: url('../fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype'),
-      url('../fonts/Mulish/static/Mulish-Bold.ttf') format('truetype');
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-style: normal;
+  url('../fonts/Mulish/static/Mulish-Bold.ttf') format('truetype');
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 html, body {
@@ -41,7 +44,8 @@ html, body {
   font-size: 17px;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-weight: 400;}
+  font-weight: 400;
+  font-display: swap;}
 
 .content-board {
   padding: 60px 1%;
